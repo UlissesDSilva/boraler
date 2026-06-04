@@ -1,11 +1,15 @@
 <template>
-  <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+  <div class="main">
+    <Navbar />
+    <RouterView/>
+  </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
   //
 </script>
+<style>
+  .main {
+    height: calc(100vh - 150px);
+  }
+</style>
