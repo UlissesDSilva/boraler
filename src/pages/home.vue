@@ -3,7 +3,7 @@
     <div class="home__mascote">
       <div class="info">
         <p>
-          Olá! Seja bem-vindo(a) ao nosso projeto! Aqui compartilhamos comentários e resenhas sobre as nossas leituras. Esperamos que você aproveite as nossas dicas de livro. E aí, bora ler?
+          Olá! Seja bem-vindo(a) ao nosso projeto! Aqui compartilhamos comentários e resenhas sobre as nossas leituras. Esperamos que você aproveite as nossas dicas de livros. E aí, bora ler?
         </p>
 
       </div>
@@ -41,7 +41,7 @@ export default {
         font-size: 28px;
         text-align: center;
         border-radius: 30px;
-        box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);;
+        box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
       }
       
       img {
