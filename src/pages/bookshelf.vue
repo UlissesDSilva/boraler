@@ -1,8 +1,10 @@
 <template>
   <div class="bookshelf">
-
-    <div v-for="book in books" :key="book.id">
-      <Books :book="book"/>
+    
+    <div class="container">
+      <div v-for="book in books" :key="book.id">
+        <Books :book="book"/>
+      </div>
     </div>
   </div>
 </template>
@@ -28,11 +30,15 @@ export default {
 
 <style lang="scss">
   .bookshelf {
+    height: 100%;
     padding: 24px;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    .books {
+    background-image: url('../assets/img/fundo.png');
+    background-repeat: repeat;
+    .container {
+      display: flex;
+      gap: 53px;
+      flex-wrap: wrap;
+      margin-left: 70px;
     }
   }
 </style>

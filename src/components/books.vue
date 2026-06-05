@@ -52,6 +52,8 @@ export default {
   .book {
     width: 10vw;
     height: 32vh;
+    box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
+    cursor: pointer;
 
     img {
       width: 100%;
