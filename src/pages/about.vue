@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="about__mascote">
-      <p>Sobre</p>
+      <p>Este site é fruto do projeto "Conexões Literárias", que foi desenvolvido com os estudantes do 6 ano da Escola Municipal José Fernandes Vieira, sob a orientação da professora Luzia Santana. O objetivo do projeto é incentivar a leitura e a escrita, por meio do compartilhamento de comentários, opiniões e recomendações sobre livros lidos pelos estudantes.</p>
       <img src="../assets/img/mascote2.png" alt="fernandinho sentado">
     </div>
   </div>
