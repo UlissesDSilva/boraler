@@ -2,16 +2,16 @@
   <v-dialog max-width="600">
     <template v-slot:activator="{ props: activatorProps }">
       <div class="book" v-bind="activatorProps">
-        <img :src="path" :alt="book.title"/>
+        <img :src="path" :alt="book?.title"/>
       </div>  
     </template>
 
     <template v-slot:default="{ isActive }">
-      <v-card :title="book.title">
+      <v-card :title="book?.title">
         <v-card-text>
-          <p class="auth"><strong>{{book.auth}}</strong></p>
-          {{ book.coments }}
-          <p class="auth-coments">Comentário feito por: {{book.authComents}}</p>
+          <p class="auth"><strong>{{book?.auth}}</strong></p>
+          {{ book?.coments }}
+          <p class="auth-coments">Comentário feito por: {{book?.authComents}}</p>
         </v-card-text>
 
         <v-card-actions>
@@ -29,16 +29,20 @@
 </template>
 
 <script lang="ts">
-import BookViewModel from '../model/interface/book-view.model.ts'
+import type { BookViewModel } from '../model/interface/book-view.model.ts'
+import type { PropType } from 'vue';
 
 export default {
   props: {
-    book: {} as BookViewModel
+    book: {
+      type: Object as PropType<BookViewModel>,
+      required: true
+    }
   },
   data() {
     return {
-      path: `cover/${this.book.id}`,
-      titleModal: `${this.book.title} - ${this.book.auth}`
+      path: `cover/${this.book?.id}`,
+      titleModal: `${this.book?.title} - ${this.book?.auth}`
 
     }
   },

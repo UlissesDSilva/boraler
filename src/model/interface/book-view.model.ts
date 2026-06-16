@@ -1,4 +1,4 @@
-export default interface BookViewModel {
+export interface BookViewModel {
   id: string,
   title: string,
   auth: string,
