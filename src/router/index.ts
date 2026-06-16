@@ -6,11 +6,14 @@
 
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import Home from '@/pages/home.vue'
+import About from '@/pages/about.vue'
+import Bookshelf from '@/pages/bookshelf.vue'
 
 const routes = [
-  {path: '/', component: () => import('@/pages/home.vue')},
-  {path: '/about', component: () => import('@/pages/about.vue')},
-  {path: '/bookshelf', component: () => import('@/pages/bookshelf')},
+  {path: '/', component: Home},
+  {path: '/about', component: About},
+  {path: '/bookshelf', component: Bookshelf},
 ]
 
 const router = createRouter({
