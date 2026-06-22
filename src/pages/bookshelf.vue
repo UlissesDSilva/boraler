@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @media (min-width: 426px) {
+  @media (min-width: 447px) {
     .bookshelf {
       height: 100%;
       padding: 24px;
