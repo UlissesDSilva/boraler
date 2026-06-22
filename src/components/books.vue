@@ -53,20 +53,41 @@ export default {
 </script>
 
 <style lang="scss">
-  .book {
-    width: 10vw;
-    height: 32vh;
-    box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
-    cursor: pointer;
-
-    img {
-      width: 100%;
-      height: 100%;
+  @media (min-width: 426px) {
+    .book {
+      width: 10vw;
+      height: 32vh;
+      box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
+      cursor: pointer;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .auth { margin-bottom: 12px; }
+    .auth-coments {
+      margin-top: 8px;
     }
   }
 
-  .auth { margin-bottom: 12px; }
-  .auth-coments {
-    margin-top: 8px;
+  @media (max-width: 426px) {
+    .book {
+      width: 57vw;
+      height: 46vh;
+      box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
+      cursor: pointer;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .auth { margin-bottom: 12px; }
+    .auth-coments {
+      margin-top: 8px;
+    }
   }
 </style>

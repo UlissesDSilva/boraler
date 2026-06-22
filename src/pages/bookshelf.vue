@@ -29,16 +29,34 @@ export default {
 </script>
 
 <style lang="scss">
-  .bookshelf {
-    height: 100%;
-    padding: 24px;
-    background-image: url('../assets/img/fundo.png');
-    background-repeat: repeat;
-    .container {
-      display: flex;
-      gap: 53px;
-      flex-wrap: wrap;
-      margin-left: 70px;
+  @media (min-width: 426px) {
+    .bookshelf {
+      height: 100%;
+      padding: 24px;
+      background-image: url('../assets/img/fundo.png');
+      background-repeat: repeat;
+      .container {
+        display: flex;
+        gap: 53px;
+        flex-wrap: wrap;
+        margin-left: 70px;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .bookshelf {
+      height: 100%;
+      padding: 24px;
+      background-image: url('../assets/img/fundo.png');
+      background-repeat: repeat;
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 19px;
+        align-items: center;
+      }
     }
   }
 </style>
