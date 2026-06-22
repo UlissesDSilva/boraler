@@ -72,7 +72,7 @@ export default {
     }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 446px) {
     .book {
       width: 57vw;
       height: 46vh;

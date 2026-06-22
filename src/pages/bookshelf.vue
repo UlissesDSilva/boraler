@@ -44,7 +44,7 @@ export default {
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 446px) {
     .bookshelf {
       height: 100%;
       padding: 24px;
