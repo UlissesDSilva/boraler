@@ -46,7 +46,7 @@ export default {
 
   @media (max-width: 412px) {
     .bookshelf {
-      height: 100%;
+      height: 100vh;
       padding: 24px;
       background-image: url('../assets/img/fundo.png');
       background-repeat: repeat;
