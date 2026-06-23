@@ -18,31 +18,64 @@ export default {
 </script>
 
 <style lang="scss">
-  .home {
-    height: 100%;
-    padding: 24px;
-    background-image: url('../assets/img/fundo.png');
-    background-repeat: repeat;
-
-    &__mascote{
-      display: flex;
-      align-items: center;  
-      justify-content: center;
-      margin-top: 90px;
-
-      .info {
-        width: 450px;
-        padding: 12px;
-        background-color: #fff;
-        font-size: 28px;
-        text-align: center;
-        border-radius: 30px;
-        box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
+  @media (min-width: 413px) {
+    .home {
+      height: 100%;
+      padding: 24px;
+      background-image: url('../assets/img/fundo.png');
+      background-repeat: repeat;
+  
+      &__mascote{
+        display: flex;
+        align-items: center;  
+        justify-content: center;
+        margin-top: 90px;
+  
+        .info {
+          width: 450px;
+          padding: 12px;
+          background-color: #fff;
+          font-size: 28px;
+          text-align: center;
+          border-radius: 30px;
+          box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
+        }
+        
+        img {
+          width: 200px;
+          height: 300px;
+        }
       }
-      
-      img {
-        width: 200px;
-        height: 300px;
+    }
+  }
+
+  @media (max-width: 412px) {
+    .home {
+      height: 100%;
+      padding: 24px;
+      background-image: url('../assets/img/fundo.png');
+      background-repeat: repeat;
+  
+      &__mascote{
+        display: flex;
+        align-items: center;  
+        justify-content: center;
+        flex-direction: column;
+  
+        .info {
+          width: auto;
+          padding: 12px;
+          background-color: #fff;
+          font-size: 18px;
+          text-align: center;
+          border-radius: 30px;
+          box-shadow: 17px 32px 51px -28px rgba(0,0,0,0.38);
+        }
+        
+        img {
+          width: 200px;
+          height: 300px;
+        }
       }
     }
   }

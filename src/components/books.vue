@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @media (min-width: 447px) {
+  @media (min-width: 413px) {
     .book {
       width: 10vw;
       height: 32vh;
@@ -72,7 +72,7 @@ export default {
     }
   }
 
-  @media (max-width: 446px) {
+  @media (max-width: 412px) {
     .book {
       width: 57vw;
       height: 46vh;
